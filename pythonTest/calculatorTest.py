@@ -1,5 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,9 +9,9 @@ options = Options();
 options.add_argument("--headless");
 first = "9"
 second = "10"
-driver = webdriver.Firefox(executable_path='/usr/local/bin/geckodriver',options=options)
+driver = webdriver.chromedriver(executable_path='D:\K Stuff\chromedriver_win32 (1)\chromedriver.exe',options=options)
 #driver = webdriver.Firefox(firefox_options=options);
-driver.get("http://192.168.1.48:8070/websample/index.jsp")
+driver.get("http://localhost:8090/websample/index.jsp")
 current_url=driver.current_url
 assert "Addition" in driver.title
 elem = driver.find_element_by_name("first")
