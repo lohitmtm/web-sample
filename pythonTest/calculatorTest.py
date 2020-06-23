@@ -9,7 +9,7 @@ options = Options();
 options.add_argument("--headless");
 first = "9"
 second = "10"
-driver = webdriver.chromedriver(executable_path='D:\K Stuff\chromedriver_win32 (1)\chromedriver.exe',options=options)
+driver = webdriver.chromedriver(executable_path='D:\\K Stuff\\chromedriver_win32 (1)\\chromedriver.exe',options=options)
 #driver = webdriver.Firefox(firefox_options=options);
 driver.get("http://localhost:8090/websample/index.jsp")
 current_url=driver.current_url
