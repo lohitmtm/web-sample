@@ -1,6 +1,6 @@
-  var soap = require('soap');
-  var url = 'http://127.0.0.1:81/api/soap/mantisconnect.php?wsdl';
-  var user = 'administrator';
+var soap = require('C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\soap');
+  var url = 'http://127.0.0.1:81/mantis/api/soap/mantisconnect.php?wsdl';
+  var user = 'admin';
   var password = 'root';
   var pipelineArgs = process.argv.slice(2);
   var summary = pipelineArgs[0];
